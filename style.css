@@ -8,16 +8,38 @@ body {
     color: #333;
 }
 
-header {
-    background: #0078D7;
+/* Header Styles */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0078D7;
     color: white;
-    padding: 20px 10px;
-    text-align: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2em;
+.header-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.header-links {
+    display: flex;
+    gap: 15px;
+}
+
+.header-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header-links a:hover {
+    background-color: white;
+    color: #0078D7;
+    border-radius: 5px;
 }
 
 main {

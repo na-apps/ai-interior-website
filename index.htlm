@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My App Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function toggleAnswer(id) {
+            const answer = document.getElementById(id);
+            answer.style.display = (answer.style.display === "none" || !answer.style.display) ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My App</h1>
+    </header>
+
+    <main>
+        <section id="app-link">
+            <h2>Download the App</h2>
+            <a href="https://apps.apple.com/app/my-app-id" target="_blank">Get it on the App Store</a>
+        </section>
+
+        <section id="faq">
+            <h2>FAQ</h2>
+            <div class="faq-item">
+                <button onclick="toggleAnswer('answer1')">+ What is this app about?</button>
+                <div id="answer1" class="answer">This app helps you manage tasks efficiently and stay productive.</div>
+            </div>
+            <div class="faq-item">
+                <button onclick="toggleAnswer('answer2')">+ How do I reset my password?</button>
+                <div id="answer2" class="answer">Go to Settings > Account > Reset Password.</div>
+            </div>
+            <div class="faq-item">
+                <button onclick="toggleAnswer('answer3')">+ Is there a premium version?</button>
+                <div id="answer3" class="answer">Yes, premium features are available for a small monthly fee.</div>
+            </div>
+        </section>
+
+        <section id="policies">
+            <h2>Legal</h2>
+            <a href="assets/privacy-policy.html" target="_blank">Privacy Policy</a><br>
+            <a href="assets/terms-of-use.html" target="_blank">Terms of Use</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My App. All rights reserved.</p>
+    </footer>
+</body>
+</html>

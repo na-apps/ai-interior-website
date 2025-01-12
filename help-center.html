@@ -1,1 +1,107 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function toggleAnswer(id) {
+            const answer = document.getElementById(id);
+            answer.style.display = (answer.style.display === "none" || !answer.style.display) ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-title">Help Center</div>
+            <nav class="header-links">
+                <a href="index.html">Home</a>
+                <a href="terms-of-use.html">Terms of Use</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="help-center.html">Help Center</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="faq">
+            <h2>FAQ</h2>
+            <div class="faq-item">
+                <button onclick="toggleAnswer('answer1')">+ How to Upgrade/Downgrade Subscriptions?</button>
+                <div id="answer1" class="answer">
+If you have an existing subscription that you signed up for on your iPhone or iPad, and you wish to upgrade or downgrade to different subscription plan, follow these steps: <br>
+1. Go to your device's Settings. <br>
+2. Click on the Profile option at the top of the screen. <br>
+3. Select iTunes & App Store. <br>
+4. Click on your Apple ID. <br>
+5. Choose View Apple ID. <br>
+6. Scroll down and select Subscriptions. <br>
+7. Find and tap on the app. <br>
+8. Choose your new plan. <br>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button onclick="toggleAnswer('answer2')">+ How to Cancel My Subscription?</button>
+                <div id="answer2" class="answer">
+Our subscriptions renews automatically using Apple's in-app purchase payment system. You can always cancel your subscription after you subscribed in any of our packages. <br>
+Even though we do not handle payments including subscription management, we are happy to help you cancel your subscription. <br>
+<br>
+Instructions to cancel your subscription <br>
+Step 1: Open the App Store app <br>
+Switch to 'Today' tab and tap your profile on top right corner <br>
+Tap on 'Subscriptions' <br>
+Step 2: Find the App <br>
+You will see a list of expired and active subscriptions listed <br>
+Tap on the app you would like to cancel your subscription from <br>
+Step 3: Cancel your subscription <br>
+Scroll down and tap 'Cancel Subscription' button <br>
+Confim cancellation by tapping on 'Confrim' button <br>
+<br>
+If you cancel your subscription, you will still be able to use the app with premium features until its expiration date. <br>
+<br>
+Still have questions? read more about cancelling your subscription on Apple's Support Page. <br>
+https://support.apple.com/en-us/HT202039
+                </div>
+            </div>
+            <div class="faq-item">
+                <button onclick="toggleAnswer('answer3')">+ How to Request a Refund?</button>
+                <div id="answer3" class="answer">
+You may be eligible for a refund for the purchase you've made in our apps including subscriptions. However, we do not handle payments or subscriptions. Payments and refunds are managed by Apple. Therefore, you would need to contact Apple to request a refund. <br>
+<br>
+Instructions to request a refund <br>
+Step 1: Access Refund Portal <br>
+Open Safari or any other web browser <br>
+Visit reportaproblem.apple.com <br>
+Step 2: Enter Details <br>
+Tap or click "I'd like to," <br>
+Then choose "Request a refund." <br>
+Write the reason of your request <br>
+Step 3: Submit your request <br>
+Choose the app you would like to request a refund from <br>
+Tap 'Submit' button <br>
+If you already submitted a refund request, please read this article 'Check the status of your refund request' on Apple Support page. <br>
+<br>
+If a refund is issued to your account, you will lose access to the premium features that is available with your subscription. <br>
+If you still have questions, please read 'Request a refund for apps or content that you bought from Apple' article on Apple Support page.
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Still have a question?</h2>
+            Write us an email: <a href="mailto:n.a.ai.apps@gmail.com">n.a.ai.apps@gmail.com</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 NA Apps. All rights reserved.</p>
+        <nav>
+            <a href="terms-of-use.html">Terms of Use</a> |
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </nav>
+    </footer>
+</body>
+</html>
